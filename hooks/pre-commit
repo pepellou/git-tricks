@@ -1,6 +1,8 @@
 #!/bin/sh
 #
 
+~/bin/beautify
+
 if git-rev-parse --verify HEAD >/dev/null 2>&1
 then
 	against=HEAD
