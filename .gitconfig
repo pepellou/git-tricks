@@ -1,0 +1,49 @@
+# pepellou's git config file
+#   path: ~/.gitconfig
+#
+#   be aware to include in your gitconfig file only those
+#   configuration you understand, since there might be
+#   options you cannot/shouldn't apply. For instance,
+#   the alias.test is intended for PHP projects, the 
+#   core.bigFileThreshold is intended for short source
+#   code files, etc.
+
+[alias]
+	test = !sh -c \"phpunit --colors test/\"
+	last = cat-file commit HEAD
+	l = log --pretty=format:\"%C(blue black bold)%h%Creset %C(green bold)%s%Creset%C(yellow)%d%Creset [%C(cyan)%an%Creset] - %C(black)%ar\"
+	graph = !sh -c \"git l --graph\"
+	g = !sh -c \"git graph\"
+	br = branch
+	ci = commit
+	co = checkout
+	st = status
+[branch "origin"]
+	rebase = true
+[color]
+	ui = auto
+	grep = true
+[color "diff"]
+	whitespace = blue reverse
+	meta = blue black bold
+[color "grep"]
+	match = red bold
+[commit]
+	status = true
+[core]
+	editor = vi
+	excludesfile = ~/.gitignore
+	bigFileThreshold = 100k
+[format]
+	pretty = oneline
+[http]
+	lowSpeedTime = 5
+[push]
+	default = current
+[status]
+	showUntrackedFiles = no
+[user]
+	name = Pepe Doval
+	email = pepellou@gmail.com
+[web]
+	browser = google-chrome
