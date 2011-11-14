@@ -41,7 +41,7 @@
 [push]
 	default = current
 [status]
-	showUntrackedFiles = no
+	showUntrackedFiles = all
 [user]
 	name = Pepe Doval
 	email = pepellou@gmail.com
