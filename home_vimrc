@@ -1,0 +1,1 @@
+map <C-F> o	public function getpb3l~A(	) {		return $this->;Po	}	public function setpb3l~A(		$po	) {		$this->pA = $pA;	}
