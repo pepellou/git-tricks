@@ -19,6 +19,7 @@
 	ci = commit
 	co = checkout
 	st = status
+	workon = !sh -c 'vi -o `git show --pretty=\"format:\" --name-only $1 | tail -n +2 | xargs`' -
 [branch "origin"]
 	rebase = true
 [color]
