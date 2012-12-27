@@ -20,8 +20,10 @@
 	co = checkout
 	st = status
 	workon = !sh -c 'vi -o `git show --pretty=\"format:\" --name-only $1 | tail -n +2 | xargs`' -
-[branch "origin"]
+[branch "master"]
 	rebase = true
+[branch]
+	autosetuprebase = always
 [color]
 	ui = auto
 	grep = true

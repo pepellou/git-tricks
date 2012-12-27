@@ -44,3 +44,16 @@ Another interesting feature you can need is to separately run the tests to analy
 	tests = "!sh -c \"for file in test/*Test.php; do echo \\$file:; phpunit \\$file > results34fu35g.test; grep -v \\\"^$\\\" results34fu35g.test | grep -v Bergmann; rm results34fu35g.test; done\""
 
 It's a quick&dirt implementation, but that's the idea and it works.
+
+##Rebase by default
+
+For me it's important rebasing branches instead of merging them, specially when pulling work from other people, for a best code integration. For that purpose, we can prevent "git pull" from automatic merging by forcing "rebase" in the branches we specify:
+
+	[branch "master"]
+		rebase = true
+
+Additionally, we can force it for every new branch:
+
+	[branch]
+		autosetuprebase = always
+
