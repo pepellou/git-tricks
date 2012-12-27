@@ -30,3 +30,17 @@ Of course you can replace vi with your favourite editor.
 		git workon <branch-name>
 
 If you don't specify a commit, the last one is selected.
+
+### Run tests
+
+For me it's important to run the tests for a project while working on it. For that purpose I created specific aliases to run them with phpunit (which is my tool for running tests since my major work is in PHP):
+
+	test = !sh -c \"phpunit --colors test/\"
+
+That way, if you need a long command for running tests you can alias it to "git test". The above example shows how to run tests with phpunit producing a colored output.
+
+Another interesting feature you can need is to separately run the tests to analyze the results for each of them. For instance, since phpunit only gives a final summary you can run each test separately to obtain info about timing and memory for each test:
+
+	tests = "!sh -c \"for file in test/*Test.php; do echo \\$file:; phpunit \\$file > results34fu35g.test; grep -v \\\"^$\\\" results34fu35g.test | grep -v Bergmann; rm results34fu35g.test; done\""
+
+It's a quick&dirt implementation, but that's the idea and it works.
