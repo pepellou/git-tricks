@@ -50,6 +50,7 @@
 [status]
 	showUntrackedFiles = all
 [user]
-	name = Pepe
+	name = Pepe Doval
+	email = pepellou@gmail.com
 [web]
 	browser = google-chrome
