@@ -39,7 +39,7 @@
 	excludesfile = ~/.gitignore
 	bigFileThreshold = 100k
 [format]
-	pretty = format:%C(blue black bold)%h%Creset %C(green bold)%s%Creset%C(yellow)%d%Creset [%C(cyan)%an%Creset] - %C(black)%ar
+	pretty = format:%C(blue black bold)%h%Creset %C(green bold)%s%Creset%C(yellow)%d%Creset [%C(cyan)%an%Creset] - %C(red)%ar
 [github]
 	user = pepellou
 	#token = your_token_here
