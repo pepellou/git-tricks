@@ -20,6 +20,7 @@
 	co = checkout
 	st = status
 	workon = !sh -c 'vi -o `git show --pretty=\"format:\" --name-only $1 | tail -n +2 | xargs`' -
+	wtf = !sh -c 'message=$(curl http://whatthecommit.com/index.txt 2> /dev/null) && git commit -m \"$message\"' -
 [branch "master"]
 	rebase = true
 [branch]
