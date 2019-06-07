@@ -1,10 +1,10 @@
-#My git tricks
+# My git tricks
 
 In this project I keep updated my local .gitcontig file to share it with you, as well as some of my hooks.
 And I also keep updated this README to explain in detail every configuration I have, just in case some of them are useful to you.
 
 
-##How to install
+## How to install
 
 If you find my configurations useful, you just need to copy the file I share as ".gitconfig" to your home folder.
 Also, if any of my hooks is useful for you, copy it to the proper folder of your project.
@@ -12,7 +12,7 @@ Also, if any of my hooks is useful for you, copy it to the proper folder of your
 Be careful! As noted in the comments of the .gitconfig, some configurations are specific to me (my name, email, ...) and you should take only those that you understand and change them if needed to fit you.
 
 
-##Aliases
+## Aliases
 
 ### 'Work on' a specific commit
 
@@ -45,7 +45,7 @@ Another interesting feature you can need is to separately run the tests to analy
 
 It's a quick&dirt implementation, but that's the idea and it works.
 
-##Rebase by default
+## Rebase by default
 
 For me it's important rebasing branches instead of merging them, specially when pulling work from other people, for a best code integration. For that purpose, we can prevent "git pull" from automatic merging by forcing "rebase" in the branches we specify:
 
