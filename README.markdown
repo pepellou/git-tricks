@@ -1,6 +1,6 @@
 # My git tricks
 
-In this project I keep updated my local .gitcontig file to share it with you, as well as some of my hooks.
+In this project I keep updated my local .gitconfig file to share it with you, as well as some of my hooks.
 And I also keep updated this README to explain in detail every configuration I have, just in case some of them are useful to you.
 
 
